@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Anggota Kelompok 13</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Mengatur layout menjadi 2 kolom grid */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi menjadi 2 kolom sama besar */
+            gap: 20px; /* Jarak antar kartu */
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Styling untuk kotak/kartu setiap anggota */
+        .card {
+            display: flex;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            align-items: flex-start;
+        }
+
+        /* Foto profil */
+        .profile-img {
+            width: 100px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 15px;
+            background-color: #ddd; /* Warna pengganti jika gambar belum ada */
+        }
+
+        /* Detail teks */
+        .details {
+            flex: 1;
+        }
+
+        .name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        td {
+            padding: 3px 0;
+            vertical-align: top;
+        }
+
+        .label {
+            width: 100px;
+            color: #555;
+        }
+
+        .colon {
+            width: 15px;
+            text-align: center;
+        }
+
+        /* Responsif: Jika dibuka di HP, layout otomatis jadi 1 kolom */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Data Anggota Kelompok 13</h2>
+
+    <div class="container">
+
+        <!-- Anggota 1 -->
+        <div class="card">
+            <img src="IMG-jidan.jpg" alt="jiddan" class="profile-img">
+            <div class="details">
+                <div class="name">Muhammad Jiddan Rojak</div>
+                <table>
+                    <tr><td class="label">Nama Lengkap</td><td class="colon">:</td><td>Muhammad Jiddan rojak</td></tr>
+                    <tr><td class="label">NIM</td><td class="colon">:</td><td>0110226147</td></tr>
+                    <tr><td class="label">Kelas</td><td class="colon">:</td><td>TI01</td></tr>
+                    <tr><td class="label">Ttl</td><td class="colon">:</td><td>Bogor, 19-02-2008</td></tr>
+                    <tr><td class="label">Alamt</td><td class="colon">:</td><td>Kp. Babakan Lebak RT 04 RW 05, Desa Balumbang Jaya</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Anggota 2 -->
+        <div class="card">
+            <img src="IMG-ihsan.jpg" alt="ihsan" class="profile-img">
+            <div class="details">
+                <div class="name">Muhamamd Ihsan Annazhimi</div>
+                <table>
+                    <tr><td class="label">Nama Lengkap</td><td class="colon">:</td><td>Muhamamd Ihsan Annazhimi</td></tr>
+                    <tr><td class="label">NIM</td><td class="colon">:</td><td>0110226183</td></tr>
+                    <tr><td class="label">Kelas</td><td class="colon">:</td><td>TI01</td></tr>
+                    <tr><td class="label">Ttl</td><td class="colon">:</td><td>Depok, 22-07-2008</td></tr>
+                    <tr><td class="label">Alamat</td><td class="colon">:</td><td>Komplek Pelni Blok B3 No.16 Rt 03 Rw 17 Jalan gang gamasetiaraya</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Anggota 3 -->
+        <div class="card">
+            <img src="IMG-nabil.jpg" alt="Nabil" class="profile-img">
+            <div class="details">
+                <div class="name">Muhammad Nabil</div>
+                <table>
+                    <tr><td class="label">Nama Lengkap</td><td class="colon">:</td><td>Muhammad Nabil</td></tr>
+                    <tr><td class="label">NIM</td><td class="colon">:</td><td>0110226018</td></tr>
+                    <tr><td class="label">Kelas</td><td class="colon">:</td><td>TI01</td></tr>
+                    <tr><td class="label">Ttl</td><td class="colon">:</td><td>Jakarta, 08-08-2008</td></tr>
+                    <tr><td class="label">Alamat</td><td class="colon">:</td><td>Taman Raya Citayam, Kabupaten Bogor</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Anggota 4 -->
+        <div class="card">
+            <img src="IMG-fadil.jpg" alt="Fadil" class="profile-img">
+            <div class="details">
+                <div class="name">Muhammad Khairul Fadilah</div>
+                <table>
+                    <tr><td class="label">Nama Lengkap</td><td class="colon">:</td><td>Muhammad Khairul Fadilah</td></tr>
+                    <tr><td class="label">NIM</td><td class="colon">:</td><td>0110226104</td></tr>
+                    <tr><td class="label">Kelas</td><td class="colon">:</td><td>TI01</td></tr>
+                    <tr><td class="label">Ttl</td><td class="colon">:</td><td>Bogor, 21-03-2008</td></tr>
+                    <tr><td class="label">Alamat</td><td class="colon">:</td><td>Cibinong, Kabupaten Bogor</td></tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
